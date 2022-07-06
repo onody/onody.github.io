@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   onodyの個人ブログです。趣味のガジェット、子育て、プロジェクトマネジメントなどについて書いています。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "onody.net" # the base hostname & protocol for your site, e.g. http://example.com
+destination: "docs"
 twitter_username: onodddyyy
 github_username:  onody
 paginate:            5
