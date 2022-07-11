@@ -335,7 +335,7 @@ html, body { overflow-x: hidden; }
 
 html { font-family: "游ゴシック体", "Yu Gothic", YuGothic, Osaka, sans-serif; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "PT Sans", Helvetica, Arial, sans-serif; font-weight: 400; color: #313131; letter-spacing: -.025rem; }
+h1, h2, h3, h4, h5, h6 { font-family: "PT Sans", Helvetica, Arial, sans-serif; font-weight: 400; color: #313131; }
 
 /* Wrapper  The wrapper is used to position site content when the sidebar is toggled. We use an outter wrap to position the sidebar without interferring with the regular page content. */
 .wrap { position: relative; width: 100%; }
