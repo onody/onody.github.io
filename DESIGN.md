@@ -187,6 +187,24 @@ Supership: 月間数千億リクエストのDSPプラットフォームを担当
 
 ---
 
+## Analytics
+
+Google Analytics 4 — Measurement ID: `G-6PRQ5XJ0NZ`
+
+Embed in `<head>` of `index.html`:
+
+```html
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6PRQ5XJ0NZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6PRQ5XJ0NZ');
+</script>
+```
+
+---
+
 ## Update workflow
 
 1. Edit this `DESIGN.md` with new content, color tweaks, or section changes
