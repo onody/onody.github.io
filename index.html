@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kohei Onodera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0f0f0f;
+      color: #e8e8e8;
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 80px 24px;
+    }
+
+    .wrap {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .name-rule {
+      width: 32px;
+      height: 1px;
+      background: #2a2a2a;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      margin: 48px 0 20px;
+    }
+
+    p {
+      color: #999;
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: #e8e8e8;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .work-item {
+      margin-bottom: 24px;
+    }
+
+    .work-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+    }
+
+    .work-company {
+      font-weight: 500;
+      color: #e8e8e8;
+    }
+
+    .work-period {
+      font-size: 13px;
+      color: #555;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .work-role {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .work-desc {
+      margin-top: 2px;
+      font-size: 15px;
+      color: #888;
+    }
+
+    .contact {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .contact a {
+      color: #777;
+    }
+
+    .contact a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #lang-btn {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      background: #1a1a1a;
+      color: #888;
+      border: 1px solid #2a2a2a;
+      border-radius: 4px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
+      cursor: pointer;
+      transition: color 0.15s ease;
+    }
+
+    #lang-btn:hover {
+      color: #e8e8e8;
+    }
+  </style>
+</head>
+<body>
+
+<button id="lang-btn" onclick="toggleLang()">JA</button>
+
+<div class="wrap">
+
+  <h1><span data-en="Kohei Onodera" data-ja="小野寺 耕平"></span></h1>
+  <div class="name-rule"></div>
+
+  <p><span data-en="Product Manager at Rakuten Group, building an ad-delivery platform that processes 10B+ requests/month. I work across design, engineering, and management — owning a product end-to-end is where I operate best." data-ja="楽天グループのプロダクトマネージャー。月間100億リクエストの広告配信プラットフォームを担当。デザイン・エンジニアリング・マネジメントを横断し、プロダクト全体を動かすのが強み。"></span></p>
+  <p><span data-en="Native Japanese speaker; business-level English." data-ja="日本語ネイティブ、英語でのビジネスコミュニケーション可能。"></span></p>
+
+  <h2><span data-en="WORK" data-ja="経歴"></span></h2>
+
+  <div class="work-item">
+    <div class="work-header">
+      <span class="work-company">Rakuten Group</span>
+      <span class="work-period"><span data-en="2019–present" data-ja="2019年〜現在"></span></span>
+    </div>
+    <div class="work-role"><span data-en="Product Manager / Engineering Manager" data-ja="プロダクトマネージャー / エンジニアリングマネージャー"></span></div>
+    <div class="work-desc"><span data-en="Led ad-delivery product from zero to 10B req/month, achieving profitability. Managed a global engineering team of 20+." data-ja="広告配信プロダクトを0から月間100億リクエスト・黒字化まで牽引。グローバル20名超のエンジニア組織をマネジメント。"></span></div>
+  </div>
+
+  <div class="work-item">
+    <div class="work-header">
+      <span class="work-company">Supership</span>
+      <span class="work-period"><span data-en="2016–2019" data-ja="2016〜2019年"></span></span>
+    </div>
+    <div class="work-role"><span data-en="Product Manager / Full-Stack Engineer" data-ja="プロダクトマネージャー / フルスタックエンジニア"></span></div>
+    <div class="work-desc"><span data-en="DSP platform handling hundreds of billions of requests/month. MVP Award 2017." data-ja="月間数千億リクエストのDSPプラットフォームを担当。2017年MVP賞受賞。"></span></div>
+  </div>
+
+  <div class="work-item">
+    <div class="work-header">
+      <span class="work-company"><span data-en="Freelance Engineer" data-ja="フリーランスエンジニア"></span></span>
+      <span class="work-period"><span data-en="2014–2016" data-ja="2014〜2016年"></span></span>
+    </div>
+    <div class="work-desc"><span data-en="Web application development for corporate clients." data-ja="企業向けWebアプリケーション受託開発・運用。"></span></div>
+  </div>
+
+  <div class="work-item">
+    <div class="work-header">
+      <span class="work-company">iAct</span>
+      <span class="work-period"><span data-en="2009–2014" data-ja="2009〜2014年"></span></span>
+    </div>
+    <div class="work-role"><span data-en="Web Director / Engineer" data-ja="Webディレクター / エンジニア"></span></div>
+    <div class="work-desc"><span data-en="Web production for listed companies; later transitioned to backend API development." data-ja="上場企業向けWebディレクション。後半はバックエンドAPI開発も担当。"></span></div>
+  </div>
+
+  <div class="work-item">
+    <div class="work-header">
+      <span class="work-company">Fubuki</span>
+      <span class="work-period"><span data-en="2006–2008" data-ja="2006〜2008年"></span></span>
+    </div>
+    <div class="work-role"><span data-en="Web Director" data-ja="Webディレクター"></span></div>
+    <div class="work-desc"><span data-en="Web production planning, design, and project management for listed companies." data-ja="上場企業向けWeb制作の企画・デザイン・プロジェクト管理。"></span></div>
+  </div>
+
+  <h2><span data-en="CONTACT" data-ja="連絡先"></span></h2>
+
+  <div class="contact">
+    <a href="https://www.linkedin.com/in/kohei-onodera-172630ba/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://x.com/koheionod" target="_blank" rel="noopener">X</a>
+    <a href="https://github.com/onody" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:onodera212@gmail.com">Email</a>
+  </div>
+
+</div>
+
+<script>
+  let lang = 'en';
+
+  function toggleLang() {
+    lang = lang === 'en' ? 'ja' : 'en';
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.textContent = el.dataset[lang];
+    });
+    document.querySelector('#lang-btn').textContent = lang === 'en' ? 'JA' : 'EN';
+    document.documentElement.lang = lang === 'en' ? 'en' : 'ja';
+  }
+
+  document.querySelectorAll('[data-en]').forEach(el => {
+    el.textContent = el.dataset.en;
+  });
+</script>
+
+</body>
+</html>
